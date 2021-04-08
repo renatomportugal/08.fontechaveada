@@ -1,0 +1,1 @@
+Evita a tensão de pico no mosfet, protege o Drain do Mosfet.

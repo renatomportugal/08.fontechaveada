@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - IT System Interface Explorer</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--jquery and container div tags thanks to Huan Zhang https://jsfiddle.net/zhanghuancs/cuyu8/-->
+<script type="text/javascript" src="https://d3js.org/d3.v2.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+
+<!-- start IT systems Explorer-->
+<h2><DIV ALIGN=CENTER>IT Systems Interface Explorer</DIV></h2>
+
+<p><DIV ALIGN=CENTER>Works with Firefox or Chrome Browswers</DIV></p>
+
+<p><DIV ALIGN=CENTER><b> Instructions:  "double-click" to highlight neighbor nodes, "double-click" again to restore. Click and drag nodes to other locations around the screen.</DIV></b></p>
+
+<div id="container" class="container">
+    <div id="sidebar" style="display: none;">
+        <div class="item-group">
+            <label class="item-label">Filter</label>
+            <div id="filterContainer" class="filterContainer checkbox-interaction-group"></div>
+        </div> 
+    </div>
+    <div id="graphContainer" class="graphContainer"></div>
+</div>
+<!-- partial -->
+  <script src='https://d3js.org/d3.v3.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
