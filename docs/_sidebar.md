@@ -1,2 +1,4 @@
 * [Home](/)
-* [Instalação](Instalacao.md)
+* [Procedimentos](procedimentos.md)
+* [Circuitos](circuitos.md)
+* [Componentes](componentes.md)
