@@ -1,5 +1,6 @@
-* [Home](/)
+* [Teoria](/#fonte_chaveada)
 * [Procedimentos](procedimentos.md)
+* [Defeitos](defeitos.md)
 * [Circuitos](circuitos.md)
 * [Componentes](componentes.md)
-* [Fontes](Fontes.md)
+* [PWM](PWM.md)

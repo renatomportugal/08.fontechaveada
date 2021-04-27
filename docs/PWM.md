@@ -1,6 +1,6 @@
-# Fontes
+# Circuirtos_PWM
 
-## PWM_SC6105
+## SC6105
 
 ![SC6105_001.jpg](img/circuitos/pwm/SC6105/SC6105_001.jpg)
 ![SC6105_002.jpg](img/circuitos/pwm/SC6105/SC6105_002.jpg)
@@ -32,3 +32,11 @@
 ![SC6105_028.jpg](img/circuitos/pwm/SC6105/SC6105_028.jpg)
 ![SC6105_029.jpg](img/circuitos/pwm/SC6105/SC6105_029.jpg)
 ![SC6105_030.jpg](img/circuitos/pwm/SC6105/SC6105_030.jpg)
+
+## 2005Z
+
+![2005Z_001.jpg](img/circuitos/pwm/2005Z/2005Z_001.jpg)
+![2005Z_002.jpg](img/circuitos/pwm/2005Z/2005Z_002.jpg)
+![2005Z_003.jpg](img/circuitos/pwm/2005Z/2005Z_003.jpg)
+![2005Z_004.jpg](img/circuitos/pwm/2005Z/2005Z_004.jpg)
+![2005Z_005.jpg](img/circuitos/pwm/2005Z/2005Z_005.jpg)
