@@ -1,6 +1,7 @@
 # Componentes
 
 ## Diodos_Retificadores_Do_Primario
+
 ![DiodoRetifPrim_001.jpg)](img/componentes/DiodosRetificadoresDoPrimario/DiodoRetifPrim_001.jpg)
 ![DiodoRetifPrim_002.jpg)](img/componentes/DiodosRetificadoresDoPrimario/DiodoRetifPrim_002.jpg)
 ![DiodoRetifPrim_003.jpg)](img/componentes/DiodosRetificadoresDoPrimario/DiodoRetifPrim_003.jpg)
@@ -9,6 +10,7 @@
 ![DiodoRetifPrim_006.jpg)](img/componentes/DiodosRetificadoresDoPrimario/DiodoRetifPrim_006.jpg)
 
 ## Diodos_Schottky
+
 ![Schottky_001.jpg)](img/componentes/diodoSchottky/Schottky_001.jpg)
 ![Schottky_002.jpg)](img/componentes/diodoSchottky/Schottky_002.jpg)
 ![Schottky_003.jpg)](img/componentes/diodoSchottky/Schottky_003.jpg)
@@ -37,12 +39,27 @@
 ![Schottky_026.jpg)](img/componentes/diodoSchottky/Schottky_026.jpg)
 
 ## Fusivel
+
 ![Fusivel_001.jpg)](img/componentes/fusivel/Fusivel_001.jpg)
 ![Fusivel_002.jpg)](img/componentes/fusivel/Fusivel_002.jpg)
 
+## Transformadores
+
+![Transformadores_001.jpg)](img/componentes/Transformadores/Transformadores_001.jpg)
+
 ## Trafo_2
+
 ![T2_001.jpg)](img/componentes/t2/T2_001.jpg)
 ![T2_002.jpg)](img/componentes/t2/T2_002.jpg)
 ![T2_003.jpg)](img/componentes/t2/T2_003.jpg)
 ![T2_004.jpg)](img/componentes/t2/T2_004.jpg)
 ![T2_005.jpg)](img/componentes/t2/T2_005.jpg)
+
+## Optoacopladores
+
+![OptAc_001.jpg)](img/componentes/OptoAcopladores/OptAc_001.jpg)
+![OptAc_002.jpg)](img/componentes/OptoAcopladores/OptAc_002.jpg)
+![OptAc_003.jpg)](img/componentes/OptoAcopladores/OptAc_003.jpg)
+![OptAc_004.jpg)](img/componentes/OptoAcopladores/OptAc_004.jpg)
+![OptAc_005.jpg)](img/componentes/OptoAcopladores/OptAc_005.jpg)
+![OptAc_006.jpg)](img/componentes/OptoAcopladores/OptAc_006.jpg)

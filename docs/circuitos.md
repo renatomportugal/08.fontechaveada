@@ -1,4 +1,5 @@
 # Circuitos
+
 ## Entrada_AC
 
 ![AC_001.jpg)](img/circuitos/entrada_AC/AC_001.jpg)
@@ -11,6 +12,7 @@
 ![AC_008.jpg)](img/circuitos/entrada_AC/AC_008.jpg)
 
 ## Amostragem
+
 ![Amostragem_001.jpg)](img/circuitos/amostragem/Amostragem_001.jpg)
 ![Amostragem_002.jpg)](img/circuitos/amostragem/Amostragem_002.jpg)
 ![Amostragem_003.jpg)](img/circuitos/amostragem/Amostragem_003.jpg)
@@ -29,11 +31,13 @@
 ![Amostragem_016.jpg)](img/circuitos/amostragem/Amostragem_016.jpg)
 
 ## Chaveamento
+
 ![Chaveamento_001.jpg)](img/circuitos/chaveamento/Chaveamento_001.jpg)
 ![Chaveamento_002.jpg)](img/circuitos/chaveamento/Chaveamento_002.jpg)
 ![Chaveamento_003.jpg)](img/circuitos/chaveamento/Chaveamento_003.jpg)
 
 ## CI_Oscilador
+
 Evita a tensão de pico no mosfet, protege o Drain do Mosfet.<br>
 ![Oscilador_001.jpg)](img/circuitos/ci_oscilador/Oscilador_001.jpg)
 ![Oscilador_002.jpg)](img/circuitos/ci_oscilador/Oscilador_002.jpg)
@@ -41,6 +45,7 @@ Evita a tensão de pico no mosfet, protege o Drain do Mosfet.<br>
 ![Oscilador_004.jpg)](img/circuitos/ci_oscilador/Oscilador_004.jpg)
 
 ## Tensao_No_Secundario
+
 ![v_secundario_001.jpg)](img/circuitos/v_secundario/v_secundario_001.jpg)
 ![v_secundario_002.jpg)](img/circuitos/v_secundario/v_secundario_002.jpg)
 ![v_secundario_003.jpg)](img/circuitos/v_secundario/v_secundario_003.jpg)
@@ -63,9 +68,11 @@ Evita a tensão de pico no mosfet, protege o Drain do Mosfet.<br>
 ![v_secundario_020.jpg)](img/circuitos/v_secundario/v_secundario_020.jpg)
 
 ## PWM
+
 ![pwm_001.jpg)](img/circuitos/pwm/PWM_001.jpg)
 
 ## Resistor_De_Disparo
+
 Quando está com valor alterado a fonte liga depois de alguns minutos ou tentativas.
 ![RD_001.jpg)](img/circuitos/resistorDeDisparo/RD_001.jpg)
 ![RD_002.jpg)](img/circuitos/resistorDeDisparo/RD_002.jpg)
@@ -75,7 +82,12 @@ Quando está com valor alterado a fonte liga depois de alguns minutos ou tentati
 ![RD_006.jpg)](img/circuitos/resistorDeDisparo/RD_006.jpg)
 
 ## Retificacao_No_Secundario
+
 ![RetSec_001.jpg)](img/circuitos/retificacaoNoSecundario/RetSec_001.jpg)
 ![RetSec_002.jpg)](img/circuitos/retificacaoNoSecundario/RetSec_002.jpg)
 ![RetSec_003.jpg)](img/circuitos/retificacaoNoSecundario/RetSec_003.jpg)
 ![RetSec_004.jpg)](img/circuitos/retificacaoNoSecundario/RetSec_004.jpg)
+
+## Power_Good
+
+![PowerGood_001.jpg)](img/circuitos/PowerGood/PowerGood_001.jpg)
