@@ -16,6 +16,10 @@
 ![TesteVivo_001.jpg)](img/procedimentos/5v_Pson/TesteVivo_001.jpg)
 ![TesteVivo_002.jpg)](img/procedimentos/5v_Pson/TesteVivo_002.jpg)
 
+### Sem_PSon_Sem_StdBy
+
+Iremos começar os testes pelo primário, AINDA SEM FAZER o JUMPER do Preto com o Verde.
+
 ### Defeito_PSON_menor_que_5v
 
 A medição está com 4.08v. Está com barulho de chaveamento mesmo após desligar. Quando terminou o barulho, começou a descarregar.
