@@ -2,91 +2,74 @@ var dataArrayAreas = ["linhaVerdeSemSeta", "linhaTracejadaComSeta", "linhaVermel
 var dataArrayAreasLegenda = ["Português", "Matemática", "Geografia"];
 var dataGroup = ["Básico","Intemediário", "Avançado"];
 
-
-// This is an adaptation of Mike Bostock's Force Directed Graph https://bl.ocks.org/mbostock/2706022
 var links = [
 //Data Collection
 ////Control
+// {"source":0,"target":0,"type": "ESB" ,"datatype": "na"},
 
-
-{"source":0,"target":1, "type": "linhaVerdeSemSeta"},
-{"source":0,"target":2, "type": "linhaVerdeSemSeta"},
-{"source":2,"target":2, "type": "linhaVermelhaComSeta"},
-{"source":4,"target":4, "type": "linhaVermelhaComSeta"},
-{"source":4,"target":0, "type": "linhaTracejadaComSeta"},
-
-// {"source":0,"target":2, "type": 1},
-// {"source":0,"target":1, "type": 2},
-// {"source":2,"target":2, "type": 0},
-// {"source":3,"target":3, "type": 0},
-// {"source":4,"target":4, "type": 0},
-
-
-
-// {"source":0,"target":1,"type": "bidirectional" ,"datatype": "na"},
-// {"source":0,"target":2,"type": "ESB" ,"datatype": "na"},
-// {"source":0,"target":7,"type": "bidirectional" ,"datatype": "na"},
-// {"source":0,"target":1,"type": "ESB" ,"datatype": "na"},
-// //GEO
-// {"source":1,"target":2,"type": "bidirectional" ,"datatype": "na"},
-// {"source":8,"target":1,"type": "one-directional" ,"datatype": "na"},
-// {"source":9,"target":1,"type": "one-directional" ,"datatype": "na"},
-// {"source":10,"target":1,"type": "one-directional" ,"datatype": "na"},
-// //Data Collection
-// ////Internet
-// {"source":3,"target":2,"type": "one-directional" ,"datatype": "na"},
-// {"source":2,"target":0,"type": "ESB" ,"datatype": "na"},
-// {"source":2,"target":7,"type": "ESB" ,"datatype": "na"},
-// {"source":2,"target":11,"type": "bidirectional" ,"datatype": "na"},
-// ////Mobile
-// {"source":12,"target":4,"type": "bidirectional" ,"datatype": "na"},
-// {"source":4,"target":5,"type": "bidirectional" ,"datatype": "na"},
-// {"source":5,"target":0,"type": "ESB" ,"datatype": "na"},
-// ////Paradata
-// {"source":7,"target":0,"type": "bidirectional" ,"datatype": "na"},
-// //Survey
-// {"source":6,"target":2,"type": "one-directional" ,"datatype": "na"},
-// //Data Dissemination
-// {"source":16,"target":14,"type": "bidirectional" ,"datatype": "na"},
-// {"source":14,"target":13,"type": "bidirectional" ,"datatype": "na"},
-// {"source":13,"target":0,"type": "ESB" ,"datatype": "na"},
-// //Support
-// {"source":15,"target":0,"type": "ESB" ,"datatype": "na"},
-// {"source":16,"target":15,"type": "bidirectional" ,"datatype": "na"}
+//Sem nada
+{"source":0,"target":2, "type": 1},
+{"source":0,"target":1, "type": 2},
+{"source":2,"target":2, "type": 0},
+{"source":3,"target":3, "type": 0},
+{"source":4,"target":4, "type": 0},
+/*
+{"source":0,"target":2,"type": "ESB" ,"datatype": "na"},
+{"source":0,"target":7,"type": "bidirectional" ,"datatype": "na"},
+{"source":0,"target":1,"type": "ESB" ,"datatype": "na"},
+//GEO
+{"source":1,"target":2,"type": "bidirectional" ,"datatype": "na"},
+{"source":8,"target":1,"type": "one-directional" ,"datatype": "na"},
+{"source":9,"target":1,"type": "one-directional" ,"datatype": "na"},
+{"source":10,"target":1,"type": "one-directional" ,"datatype": "na"},
+//Data Collection
+////Internet
+{"source":3,"target":2,"type": "one-directional" ,"datatype": "na"},
+{"source":2,"target":0,"type": "ESB" ,"datatype": "na"},
+{"source":2,"target":7,"type": "ESB" ,"datatype": "na"},
+{"source":2,"target":11,"type": "bidirectional" ,"datatype": "na"},
+////Mobile
+{"source":12,"target":4,"type": "bidirectional" ,"datatype": "na"},
+{"source":4,"target":5,"type": "bidirectional" ,"datatype": "na"},
+{"source":5,"target":0,"type": "ESB" ,"datatype": "na"},
+////Paradata
+{"source":7,"target":0,"type": "bidirectional" ,"datatype": "na"},
+//Survey
+{"source":6,"target":2,"type": "one-directional" ,"datatype": "na"},
+//Data Dissemination
+{"source":16,"target":14,"type": "bidirectional" ,"datatype": "na"},
+{"source":14,"target":13,"type": "bidirectional" ,"datatype": "na"},
+{"source":13,"target":0,"type": "ESB" ,"datatype": "na"},
+//Support
+{"source":15,"target":0,"type": "linhaTracejada" ,"datatype": "na"},
+{"source":16,"target":15,"type": "bidirectional" ,"datatype": "na"}
+*/
 ///////  LAST LINE -- NOTHING FOLLOWS  ////// 
 ];
 var nodes = [
-    {"name": "Item01" ,"group": "Control"},
-    {"name": "Item02" ,"group": "Control"},
-    {"name": "Item03" ,"group": "Internet"},
-    {"name": "Item04" ,"group": "Internet"},
-    {"name": "Item05" ,"group": "External"},
-
-
-    // {"name": "Item01" ,"group": dataGroup[0]},
-    // {"name": "Item02" ,"group": dataGroup[1]},
-    // {"name": "Item03" ,"group": dataGroup[0]},
-    // {"name": "Item04" ,"group": dataGroup[0]},
-    // {"name": "Item05" ,"group": dataGroup[2]},
-
-
-// {"name": "Simple Control" ,"group": "Control"},
-// {"name": "Analytic Decision" ,"group": "Control"},
-// {"name": "Web Survey" ,"group": "Internet"},
-// {"name": "Public" ,"group": "External"},
-// {"name": "Mobile App" ,"group": "Mobile"},
-// {"name": "Mobile Backend" ,"group": "Mobile"},
-// {"name": "Survey Builder" ,"group": "Survey Builder"},
-// {"name": "Paradata Processing" ,"group": "Paradata"},
-// {"name": "Map Images" ,"group": "Geo"},
-// {"name": "Address List" ,"group": "Geo"},
-// {"name": "GPS-Database" ,"group": "Geo"},
-// {"name": "Geo-Server" ,"group": "Geo"},
-// {"name": "Mobile Worker" ,"group": "External"},
-// {"name": "Data Processing" ,"group": "Data Analysis"},
-// {"name": "Data Display" ,"group": "Data Visualization"},
-// {"name": "HR System" ,"group": "HR"},
-// {"name": "Internal User" ,"group": "Internal"}
+{"name": "Item01" ,"group": dataGroup[0]},
+{"name": "Item02" ,"group": dataGroup[1]},
+{"name": "Item03" ,"group": dataGroup[0]},
+{"name": "Item04" ,"group": dataGroup[0]},
+{"name": "Item05" ,"group": dataGroup[2]},
+/*
+{"name": "Analytic Decision" ,"group": "Control"},
+{"name": "Web Survey" ,"group": "Internet"},
+{"name": "Public" ,"group": "External"},
+{"name": "Mobile App" ,"group": "Mobile"},
+{"name": "Mobile Backend" ,"group": "Mobile"},
+{"name": "Survey Builder" ,"group": "Survey Builder"},
+{"name": "Paradata Processing" ,"group": "Paradata"},
+{"name": "Map Images" ,"group": "Geo"},
+{"name": "Address List" ,"group": "Geo"},
+{"name": "GPS-Database" ,"group": "Geo"},
+{"name": "Geo-Server" ,"group": "Geo"},
+{"name": "Mobile Worker" ,"group": "External"},
+{"name": "Data Processing" ,"group": "Data Analysis"},
+{"name": "Data Display" ,"group": "Data Visualization"},
+{"name": "HR System" ,"group": "HR"},
+{"name": "Internal User" ,"group": "Internal"}
+*/
 ];
 var width = 1200,
     height = 800;
@@ -105,8 +88,8 @@ var force = d3.layout.force()
 // build the arrow.
 svg.append("defs").selectAll("marker")
     // .data(["bidirectional","ESB","one-directional"])      
-    .data(dataArrayAreas)      
-  .enter().append("marker")    
+    .data(dataArrayAreas)
+    .enter().append("marker")
     .attr("id", String)
     .attr("viewBox", "0 -5 10 10")
     .attr("refX", 30)
@@ -114,23 +97,19 @@ svg.append("defs").selectAll("marker")
     .attr("markerWidth", 6)
     .attr("markerHeight", 6)
     .attr("orient", "auto")
-  .append("path")
+    .append("path")
     .attr("d", "M0,-5L10,0L0,5");
+
+
 //var link = svg.selectAll(".link")
 var link = svg.append("g").selectAll(".link")
     .data(links)
     .enter().append("line")
     .attr("class", "link")
-
-    let ttt = d.type
-
-    .attr("class", function(d) { return "link " + ttt; })    
-    .attr("marker-end", function(d) { return "url(#" + ttt + ")"; });
-
     // .attr("class", function(d) { return "link " + d.type; })    
+    .attr("class", function(d) { return "link " + dataArrayAreas[d.type]; })    
     // .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
-    
-    
+    .attr("marker-end", function(d) { return "url(#" + dataArrayAreas[d.type] + ")"; });
     
 // You define here your nodes and the color will be d.group
 var node = svg.selectAll(".node")
@@ -262,32 +241,106 @@ legend.append("text")
     createFilter();
 
     // Method to create the filter, generate checkbox options on fly
+    // function createFilter() {
+    //     d3.select(".filterContainer").selectAll("div")
+    //       .data(dataArrayAreasLegenda)
+    //       .enter()  
+    //       .append("div")
+    //       .attr("class", "checkbox-container")
+    //       .append("label")
+
+    //       .each(function (d) {
+    //             // create checkbox for each data
+    //             d3.select(this).append("input")
+    //               .attr("type", "checkbox")
+
+    //               .attr("id", function (d) {
+    //                   return "chk_" + d;
+    //                })
+
+    //               .attr("checked", true)
+    //               .on("click", function (d, i) {
+    //                   // register on click event
+    //                   var lVisibility = this.checked ? "visible" : "hidden";
+    //                   filterGraph(d, lVisibility);
+    //                })
+
+    //             d3.select(this).append("span")
+    //                 .text(function (d) {
+    //                     return d;
+    //                 });
+    // });
+
     function createFilter() {
         d3.select(".filterContainer").selectAll("div")
-        //   .data(["ESB", "bidirectional", "one-directional"])
           .data(dataArrayAreas)
           .enter()  
           .append("div")
           .attr("class", "checkbox-container")
           .append("label")
+
           .each(function (d) {
+            //   console.log(d)
+
+            //   for (let idxB = 0; idxB < dataArrayAreasLegenda.length; idxB++) {
+            //     const element = dataArrayAreasLegenda[idxB];
+            //     if (element == d) {
+            //         d = dataArrayAreas[idxB]
+            //     }
+            // }
+            
+            // console.log(d)
+
                 // create checkbox for each data
                 d3.select(this).append("input")
                   .attr("type", "checkbox")
+
                   .attr("id", function (d) {
+
+                    
                       return "chk_" + d;
                    })
+
                   .attr("checked", true)
                   .on("click", function (d, i) {
+
+                    // for (let idxB = 0; idxB < dataArrayAreasLegenda.length; idxB++) {
+                    //     const element = dataArrayAreasLegenda[idxB];
+                    //     if (element == d) {
+                    //         d = dataArrayAreas[idxB]
+                    //         // console.log(d)
+                    //     }
+                    // }
+
                       // register on click event
                       var lVisibility = this.checked ? "visible" : "hidden";
                       filterGraph(d, lVisibility);
+                      
+
                    })
+
                 d3.select(this).append("span")
                     .text(function (d) {
                         return d;
                     });
         });
+
+
+        
+        // for (let indX = 0; indX < dataArrayAreas.length; indX++) {
+        //     const element = dataArrayAreas[indX];
+        //     d3.select(this).append("input")
+        //     .attr("type", "checkbox")
+        //     .attr("id", "chk_" + element)
+        //     .attr("checked", true)
+        //     .on("click", function (d, i) {
+        //         // register on click event
+        //         var lVisibility = this.checked ? "visible" : "hidden";
+        //         filterGraph(d, lVisibility);
+        //     })
+        //     d3.select(this).append("span").text(element);
+        // }
+
         $("#sidebar").show();
     }
     // Method to filter graph

@@ -1,31 +1,35 @@
 .link {
-  fill: none;
   stroke: #666;
+  fill: none;
   stroke-opacity: .6;
   stroke-width: 1.5px;
 }
 
+/*__ESTILOS_________________________________________________________________________*/
+/*ESTILO_01*/
 #linhaVerdeSemSeta {
   fill: none;
-}
-
-#linhaVermelhaComSeta {
-  fill: red;
-
 }
 
 .link.linhaVerdeSemSeta {
   stroke: green;
 }
 
+/*ESTILO_02*/
+#linhaVermelhaComSeta {
+  fill: red;
+
+}
+
 .link.linhaVermelhaComSeta {
   stroke: red;
 }
 
-
+/*ESTILO_03*/
 .link.linhaTracejadaComSeta {
   stroke-dasharray: 0,2 1;
 }
+/*__________________________________________________________________________________*/
 
 .node text {
   font: 10px sans-serif;

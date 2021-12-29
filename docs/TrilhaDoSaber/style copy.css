@@ -5,25 +5,25 @@
   stroke-width: 1.5px;
 }
 
-#linhaVerdeSemSeta {
+#bidirectional {
   fill: none;
 }
 
-#linhaVermelhaComSeta {
+#ESB {
   fill: red;
 
 }
 
-.link.linhaVerdeSemSeta {
+.link.bidirectional {
   stroke: green;
 }
 
-.link.linhaVermelhaComSeta {
+.link.ESB {
   stroke: red;
 }
 
 
-.link.linhaTracejadaComSeta {
+.link.one-directional {
   stroke-dasharray: 0,2 1;
 }
 
