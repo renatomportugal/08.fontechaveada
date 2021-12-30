@@ -24,37 +24,6 @@ var links = [
 // {"source":4,"target":4, "type": 0},
 
 
-
-// {"source":0,"target":1,"type": "bidirectional" ,"datatype": "na"},
-// {"source":0,"target":2,"type": "ESB" ,"datatype": "na"},
-// {"source":0,"target":7,"type": "bidirectional" ,"datatype": "na"},
-// {"source":0,"target":1,"type": "ESB" ,"datatype": "na"},
-// //GEO
-// {"source":1,"target":2,"type": "bidirectional" ,"datatype": "na"},
-// {"source":8,"target":1,"type": "one-directional" ,"datatype": "na"},
-// {"source":9,"target":1,"type": "one-directional" ,"datatype": "na"},
-// {"source":10,"target":1,"type": "one-directional" ,"datatype": "na"},
-// //Data Collection
-// ////Internet
-// {"source":3,"target":2,"type": "one-directional" ,"datatype": "na"},
-// {"source":2,"target":0,"type": "ESB" ,"datatype": "na"},
-// {"source":2,"target":7,"type": "ESB" ,"datatype": "na"},
-// {"source":2,"target":11,"type": "bidirectional" ,"datatype": "na"},
-// ////Mobile
-// {"source":12,"target":4,"type": "bidirectional" ,"datatype": "na"},
-// {"source":4,"target":5,"type": "bidirectional" ,"datatype": "na"},
-// {"source":5,"target":0,"type": "ESB" ,"datatype": "na"},
-// ////Paradata
-// {"source":7,"target":0,"type": "bidirectional" ,"datatype": "na"},
-// //Survey
-// {"source":6,"target":2,"type": "one-directional" ,"datatype": "na"},
-// //Data Dissemination
-// {"source":16,"target":14,"type": "bidirectional" ,"datatype": "na"},
-// {"source":14,"target":13,"type": "bidirectional" ,"datatype": "na"},
-// {"source":13,"target":0,"type": "ESB" ,"datatype": "na"},
-// //Support
-// {"source":15,"target":0,"type": "ESB" ,"datatype": "na"},
-// {"source":16,"target":15,"type": "bidirectional" ,"datatype": "na"}
 ///////  LAST LINE -- NOTHING FOLLOWS  ////// 
 ];
 var nodes = [
@@ -72,24 +41,6 @@ var nodes = [
     // {"name": "Item04" ,"group": dataGroup[0]},
     // {"name": "Item05" ,"group": dataGroup[2]},
 
-
-// {"name": "Simple Control" ,"group": "Control"},
-// {"name": "Analytic Decision" ,"group": "Control"},
-// {"name": "Web Survey" ,"group": "Internet"},
-// {"name": "Public" ,"group": "External"},
-// {"name": "Mobile App" ,"group": "Mobile"},
-// {"name": "Mobile Backend" ,"group": "Mobile"},
-// {"name": "Survey Builder" ,"group": "Survey Builder"},
-// {"name": "Paradata Processing" ,"group": "Paradata"},
-// {"name": "Map Images" ,"group": "Geo"},
-// {"name": "Address List" ,"group": "Geo"},
-// {"name": "GPS-Database" ,"group": "Geo"},
-// {"name": "Geo-Server" ,"group": "Geo"},
-// {"name": "Mobile Worker" ,"group": "External"},
-// {"name": "Data Processing" ,"group": "Data Analysis"},
-// {"name": "Data Display" ,"group": "Data Visualization"},
-// {"name": "HR System" ,"group": "HR"},
-// {"name": "Internal User" ,"group": "Internal"}
 ];
 var width = 1200,
     height = 800;
@@ -276,7 +227,7 @@ legend.append("text")
     function createFilter() {
         d3.select(".filterContainer").selectAll("div")
         //   .data(["ESB", "bidirectional", "one-directional"])
-          .data(dataArrayAreas)
+          .data(dataArrayAreasLegenda)
           .enter()  
           .append("div")
           .attr("class", "checkbox-container")
@@ -286,11 +237,31 @@ legend.append("text")
                 d3.select(this).append("input")
                   .attr("type", "checkbox")
                   .attr("id", function (d) {
-                      return "chk_" + d;
+
+                    //_A partir da legenda, colocar o estilo
+                    //   return "chk_" + d;
+
+                    for (let idxA = 0; idxA < dataArrayAreasLegenda.length; idxA++) {
+                        const element = dataArrayAreasLegenda[idxA];
+                        if (d == element) {
+                            d = dataArrayAreas[idxA]
+                        }
+                    }
+                    return "chk_" + d;
+
                    })
                   .attr("checked", true)
                   .on("click", function (d, i) {
                       // register on click event
+
+                    // console.log(d)
+                    for (let idxA = 0; idxA < dataArrayAreasLegenda.length; idxA++) {
+                        const element = dataArrayAreasLegenda[idxA];
+                        if (d == element) {
+                            d = dataArrayAreas[idxA]
+                        }
+                    }
+
                       var lVisibility = this.checked ? "visible" : "hidden";
                       filterGraph(d, lVisibility);
                    })
@@ -307,6 +278,8 @@ function filterGraph(aType, aVisibility){
 
         link.style("visibility", function (o) {
          var lOriginalVisibility = $(this).css("visibility");
+        //  console.log("o.type: "+o.type)
+        //  console.log("aType: "+aType)
          return o.type === aType ? aVisibility : lOriginalVisibility;
          });      
    
