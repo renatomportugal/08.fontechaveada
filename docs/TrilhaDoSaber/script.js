@@ -12,8 +12,10 @@ var links = [
 {"source":0,"target":1, "type": "linhaVerdeSemSeta"},
 {"source":0,"target":2, "type": "linhaVerdeSemSeta"},
 {"source":2,"target":2, "type": "linhaVermelhaComSeta"},
-{"source":4,"target":4, "type": "linhaVermelhaComSeta"},
-{"source":4,"target":0, "type": "linhaTracejadaComSeta"},
+{"source":3,"target":3, "type": "linhaVermelhaComSeta"},
+{"source":1,"target":0, "type": "linhaTracejadaComSeta"},
+{"source":4,"target":4, "type": "linhaVerdeSemSeta"},
+{"source":5,"target":5, "type": "linhaVerdeSemSeta"},
 
 // {"source":0,"target":2, "type": 1},
 // {"source":0,"target":1, "type": 2},
@@ -59,8 +61,9 @@ var nodes = [
     {"name": "Item01" ,"group": "Control"},
     {"name": "Item02" ,"group": "Control"},
     {"name": "Item03" ,"group": "Internet"},
-    {"name": "Item04" ,"group": "Internet"},
+    {"name": "Item04" ,"group": "External"},
     {"name": "Item05" ,"group": "External"},
+    {"name": "Item06" ,"group": "External"},
 
 
     // {"name": "Item01" ,"group": dataGroup[0]},
@@ -122,13 +125,21 @@ var link = svg.append("g").selectAll(".link")
     .enter().append("line")
     .attr("class", "link")
 
-    let ttt = d.type
+    
 
-    .attr("class", function(d) { return "link " + ttt; })    
-    .attr("marker-end", function(d) { return "url(#" + ttt + ")"; });
+    // .attr("class", function(d) { 
+    //     let ttt = d.type
+    //     console.log(ttt)
+    //     return "link " + ttt; 
+    // })    
+    // .attr("marker-end", function(d) {
+    //     let ttt = d.type
+    //     // console.log(ttt)
+    //     return "url(#" + ttt + ")"; 
+    // });
 
-    // .attr("class", function(d) { return "link " + d.type; })    
-    // .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
+    .attr("class", function(d) { return "link " + d.type; })    
+    .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
     
     
     
