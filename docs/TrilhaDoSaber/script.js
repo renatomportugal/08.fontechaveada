@@ -9,11 +9,11 @@ var links = [
 ////Control
 
 
-{"source":0,"target":1, "type": "linhaVerdeSemSeta"},
+
 {"source":0,"target":2, "type": "linhaVerdeSemSeta"},
 {"source":2,"target":2, "type": "linhaVermelhaComSeta"},
-{"source":3,"target":3, "type": "linhaVermelhaComSeta"},
-{"source":1,"target":0, "type": "linhaTracejadaComSeta"},
+{"source":3,"target":3, "type": "linhaVerdeSemSeta"},
+{"source":0,"target":1, "type": "linhaTracejadaComSeta"},
 {"source":4,"target":4, "type": "linhaVerdeSemSeta"},
 {"source":5,"target":5, "type": "linhaVerdeSemSeta"},
 
@@ -27,12 +27,19 @@ var links = [
 ///////  LAST LINE -- NOTHING FOLLOWS  ////// 
 ];
 var nodes = [
-    {"name": "Item01" ,"group": "Control"},
-    {"name": "Item02" ,"group": "Control"},
-    {"name": "Item03" ,"group": "Internet"},
-    {"name": "Item04" ,"group": "External"},
-    {"name": "Item05" ,"group": "External"},
-    {"name": "Item06" ,"group": "External"},
+    // {"name": "Item01" ,"group": "Control"},
+    // {"name": "Item02" ,"group": "Control"},
+    // {"name": "Item03" ,"group": "Internet"},
+    // {"name": "Item04" ,"group": "External"},
+    // {"name": "Item05" ,"group": "External"},
+    // {"name": "Item06" ,"group": "External"},
+    
+    {"name": "00.Item00" ,"group": dataGroup[0]},
+    {"name": "01.Item01" ,"group": dataGroup[1]},
+    {"name": "02.Item02" ,"group": dataGroup[0]},
+    {"name": "03.Item03" ,"group": dataGroup[0]},
+    {"name": "04.Item04" ,"group": dataGroup[2]},
+    {"name": "05.Item05" ,"group": dataGroup[2]},
 
 
     // {"name": "Item01" ,"group": dataGroup[0]},
@@ -45,6 +52,27 @@ var nodes = [
 var width = 1200,
     height = 800;
 var color = d3.scale.category20();
+
+
+function VerRGB(value) {
+    let r = value >> 16;
+    let g = value >> 8 & 255;
+    let b = value & 255;
+    let rValue = (r << 16)+(g << 8)+(b & 255);
+    if (value == rValue) {
+        console.log("// "+value+" //rgb("+r+", "+g+", "+b+")")
+    };
+}
+function DescobrirValorPeloRGB(r,g,b) {
+    rValue = (r << 16)+(g << 8)+(b & 255);
+    console.log(rValue)
+}
+// VerRGB(15792383)
+
+// 15792383 //rgb(240, 248, 255)
+
+
+// var color = d3.scale.category10();
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
@@ -107,7 +135,12 @@ var node = svg.selectAll(".node")
 //to each other. Then, set the color based on which group its in
 node.append("circle")
       .attr("r",function(d) {return Math.cbrt(d.weight) * 6;})
-      .style("fill", function (d) {return color(d.group);})
+      .style("fill", function (d) {
+        //   console.log(color(d.group))
+        //   console.log(color(d))
+        //   console.log(color(group))
+          return color(d.group);
+        })
 node.append("text")
       .attr("dx", 10)
       .attr("dy", ".35em")
