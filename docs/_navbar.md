@@ -7,4 +7,4 @@
 * [:us:](/us/)
 * -->
 
-[Trilha do Saber]: https://renatomportugal.github.io/fontechaveada/TrilhaDoSaber
+[Trilha do Saber]: https://renatomportugal.github.io/08.fontechaveada/TrilhaDoSaber
