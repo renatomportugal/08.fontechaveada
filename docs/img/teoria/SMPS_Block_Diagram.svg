@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="200">
+
+  <title>SMPS Block Diagram</title>
+  <desc>Block diagram of a switched mode power supply</desc>
+
+  <style type="text/css">
+.arrow {
+  fill: none;
+  stroke: #666;
+  stroke-width: 4px;
+}
+
+#shadow {
+  fill: #666;
+  filter: url( #drop-shadow );
+}
+
+#box {
+  fill: url( #block-gradient );
+}
+
+text {
+  fill: #000;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-anchor: middle;
+}
+  </style>
+
+  <defs>
+
+    <marker id="arrow-head" refX="2" refY="2" markerWidth="3" markerHeight="4" orient="auto">
+      <path d="M 0,0 L 3,2 L 0,4 A 4,4 0 0,0 0,0" fill="#666"/>
+    </marker>
+
+    <linearGradient id="block-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#8cf" stop-opacity="1"/>
+    </linearGradient>
+
+    <filter id="drop-shadow">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+
+  </defs>
+
+  <rect width="600" height="200" fill="#fff"/>
+
+  <g marker-end="url(#arrow-head)" class="arrow">
+    <path d="M 10,55 H 45"/>
+    <path d="M 140,40 H 175"/>
+    <path d="M 270,40 H 305"/>
+    <path d="M 225,115 V 85"/>
+    <path d="M 400,40 H 435"/>
+    <path d="M 530,65 H 575"/>
+    <path d="M 550,65 V 150 H 275"/>
+  </g>
+
+  <circle cx="10" cy="55" r="7" fill="#666"/>
+  <circle cx="585" cy="65" r="7" fill="#666"/>
+
+  <g id="block">
+    <rect id="shadow" x="52" y="12" rx="10" ry="10" width="90" height="70"/>
+    <rect id="box" x="50" y="10" rx="10" ry="10" width="90" height="70"/>
+  </g>
+  <use xlink:href="#block" x="130"/>
+  <use xlink:href="#block" x="130" y="105"/>
+  <use xlink:href="#block" x="260"/>
+  <use xlink:href="#block" x="390"/>
+
+  <text x="25" y="25">Mains</text>
+  <text x="25" y="40">Input</text>
+  <text x="95" y="30">Input</text>
+  <text x="95" y="47">rectifier</text>
+  <text x="95" y="64">and filter</text>
+  <text x="225" y="40">Inverter</text>
+  <text x="225" y="57" font-style="italic">"Chopper"</text>
+  <text x="225" y="147" font-style="italic">Chopper</text>
+  <text x="225" y="164">controller</text>
+  <text x="355" y="40">Output</text>
+  <text x="355" y="57">Transformer</text>
+  <text x="485" y="30">Output</text>
+  <text x="485" y="47">rectifier</text>
+  <text x="485" y="64">and filter</text>
+  <text x="565" y="27">DC</text>
+  <text x="565" y="44">Output</text>
+
+</svg>
