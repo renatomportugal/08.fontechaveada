@@ -63,3 +63,34 @@
 ![OptAc_004.jpg)](img/componentes/OptoAcopladores/OptAc_004.jpg)
 ![OptAc_005.jpg)](img/componentes/OptoAcopladores/OptAc_005.jpg)
 ![OptAc_006.jpg)](img/componentes/OptoAcopladores/OptAc_006.jpg)
+
+## TL431
+
+![TL431](./img/componentes/tl431/tl431.png)
+![TL431 Teste](./img/componentes/tl431/tl431_teste.png)
+![TL431 Teste](./img/componentes/tl431/tl431_teste2.png)
+![TL431 Teste](./img/componentes/tl431/tl431_teste3.png)
+
+## 13007
+
+![13007](./img/componentes/13007/13007.png)
+![13007](./img/componentes/13007/13007_analog.png)
+![13007](./img/componentes/13007/13007_a.png)
+![13007](./img/componentes/13007/13007_b.png)
+![13007](./img/componentes/13007/13007_c.png)
+![13007](./img/componentes/13007/13007_d.png)
+![13007](./img/componentes/13007/13007_e.png)
+![13007](./img/componentes/13007/13007_f.png)
+![13007](./img/componentes/13007/13007_g.png)
+![13007](./img/componentes/13007/13007_h.png)
+![13007](./img/componentes/13007/13007_j.png)
+![13007](./img/componentes/13007/13007_k.png)
+![13007](./img/componentes/13007/13007_l.png)
+![13007](./img/componentes/13007/13007_m.png)
+![13007](./img/componentes/13007/13007_n.png)
+![13007](./img/componentes/13007/13007_o.png)
+
+## FQP2N60C
+
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_a.png)
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_b.png)
