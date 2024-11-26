@@ -93,4 +93,22 @@
 ## FQP2N60C
 
 ![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_a.png)
-![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_b.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_c.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_d.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_e.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_f.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_g.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_h.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_i.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_j.png)
+</br>
+![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_k.png)
+</br>
