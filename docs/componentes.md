@@ -112,3 +112,20 @@
 </br>
 ![FQP2N60C](./img/componentes/FQP2N60C/FQP2N60C_k.png)
 </br>
+
+## STP40NF03L
+
+![STP40NF03L](./img/componentes/STP40NF03L/STP40NF03L_a.png)
+</br>
+![STP40NF03L](./img/componentes/STP40NF03L/STP40NF03L_b.png)
+</br>
+![STP40NF03L](./img/componentes/STP40NF03L/STP40NF03L_c.png)
+</br>
+![STP40NF03L](./img/componentes/STP40NF03L/STP40NF03L_d.png)
+</br>
+![STP40NF03L](./img/componentes/STP40NF03L/STP40NF03L_e.png)
+</br>
+![STP40NF03L](./img/componentes/STP40NF03L/STP40NF03L_f.png)
+</br>
+![STP40NF03L](./img/componentes/STP40NF03L/STP40NF03L_g.png)
+</br>
